@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funções assincronas</title>
+</head>
+
+<body>
+    <center>
+        <h1>Funções assincronas e sincronas</h1>
+    </center>
+
+    <script>
+        //Função sincronas que deve ser executada e retornar (ou não) valor de forma sincronizada, mantendo uma ordem bem definida
+        //callback ele é uma funcao que executa o que está dentro e te retorna um valor
+
+        //primeiro ele cria o corpo e depois jogar o retornor
+        //prvando algo sincrono
+        console.log('sincrono 1')
+
+        function sayHello(cb) {
+            return cb('Hello from callback function')
+        }
+
+        //aqui eu uso o corpo criado e exibo o retorno do callback
+        //nao é assincrono
+        sayHello(function (str) {
+            console.log(str)
+        })
+        console.log('sincrono 2')
+
+
+        /*Função assincrona ela permite ao desenvolvedor executa-la porém somente após todo o seu processamento o resultado
+        é enviado como retorno. Não existe uma ordem sincronizada e é baseda em eventos.*/
+
+        setTimeout(function () {
+            console.log('Hello from async function')
+        }, 5000)
+
+        console.log('comecei a processar e o resto pode continuar')
+        console.log('Estou precessando ainda')
+        console.log('finalizei')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 - Arrows</title>
+</head>
+
+<body>
+
+    <center>
+        APRENDENDO ES6 - ARROWS
+    </center>
+
+    <script>
+        var bob = {
+            name: "Bob",
+            friend: ['Guilherme', 'Naira', 'Nicolas'],
+            printFriend: function printFriend() {
+                this.friend.forEach(f => console.log(this.name + ' conhece ' + f));
+            }
+        }
+        bob.printFriend()
+    </script>
+</body>
+
+</html>

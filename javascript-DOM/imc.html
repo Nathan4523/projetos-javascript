@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculo de IMC</title>
+
+    <style>
+        .alert-erro{
+            background-color: #c54444fa;
+            width: 100%;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>IMC</h1>
+
+        <input type="text" id="altura" name="altura" placeholder="Altura" />
+        <br><br>
+        <input type="text" id="peso" name="peso" placeholder="Peso" />
+        <br><br>
+        <button type="button" id="click">Calcular</button>
+        <br><br><br>
+        <div id="result">
+
+        </div>
+    </center>
+
+    <script>
+        ///IMC = PESO / (ALTURA * ALTURA)
+        /*<18 = VC E MAGRO
+        >18  < 24  = NORMAL
+        >25 E < 31 = SOBREPESO
+        >31 <40 = OBESIDADE */
+
+        function calcImc() {
+            const altura = document.getElementById('altura')
+            const peso = document.getElementById('peso')
+            const imc = peso.value / (altura.value * altura.value)
+            const result = document.getElementById('result');
+
+            //fazendo validacao
+            if(peso.value == '' || altura.value == ''){
+                result.innerHTML = '<span class="alert-erro">Por favor, preenche os campos para dar continuidade</span>' 
+            }
+
+
+            //com o es6 ja é possivel meter variavel dentro da string
+            //${minha_variavel}
+            if (imc < 18) {
+                result.innerHTML = `<p> ${imc} = você é magro</p>`
+            } else if (imc >= 18 && imc < 24) {
+                result.innerHTML = `<p>${imc} = você está no peso normal</p>`
+            } else if (imc >= 25 && imc < 31) {
+                result.innerHTML = `<p>${imc} = você está acima do peso</p>`
+            } else if (imc >= 31 && imc <= 40) {
+                result.innerHTML = `<p>${imc} = você está com sobre peso</p>`
+            } else if (imc >= 41) { 
+                result.innerHTML = '<p>Tu morreu bro</p>'
+            } else {
+                if(peso.value == '' || altura.value == ''){
+                result.innerHTML = '<span class="alert-erro">Por favor, preenche os campos para dar continuidade</span>' 
+                }
+            }
+        }
+
+        const button = document.getElementById('click')
+        button.addEventListener('click', calcImc)
+    </script>
+</body>
+
+</html>

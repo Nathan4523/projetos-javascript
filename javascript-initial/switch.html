@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operadores</title>
+</head>
+<body>
+    
+    <script>
+        valor1 = prompt("Escreva um valor 1")
+        valor2 = prompt("Escreva um valor 2")
+        operacao  = prompt("Selecione ( +, -, *, /) para executar")
+
+        x = parseInt(valor1);
+        y = parseInt(valor2);
+
+        switch(operacao){
+            case '+':
+                resultado = x + y
+                alert(resultado)
+            break;
+
+            case '-':
+                resultado = x - y
+                alert(resultado)
+            break;
+
+            case '*':
+                resultado = x * y
+                alert(resultado)
+            break;
+
+            case '/':
+                resultado = x / y
+                alert(resultado)
+            break;
+        }
+    </script>
+</body>
+</html>

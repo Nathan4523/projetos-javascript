@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página Principal - Faça o ABCdoABC sua página inicial</title>
+		<meta name="keywords" content="Notícias, Eventos, Guia Comercial, Institucional, Cadernos" />
+		<meta name="author" content="Gustavo Caspirro" />
+		<meta name="description" content="Portal de notícias, eventos e guia comercial na internet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!--Jquery-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/voltartopo.js"></script>
+        <script type="text/javascript" src="js/reconhecimento.js"></script>
+        <script type="text/javascript" src="js/Jquery.migrate.js"></script>
+		
+		<!--Bootstrap-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<!--Style Próprio-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body onload="identific_nav()">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+        
+        <span>
+            <a href="#topo" class="btpopup">
+                <img alt="Voltar ao Topo da Página" src="img/bt-voltar-topo.png" height="60" width="60" title="Voltar ao topo" />
+            <a>
+        </span>
+
+
+        <header id="topo" name="topo">
+            <div class="container">
+                <div class="row">
+                    <div class="logo text col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <a href="popup.html" target="_blank"> <img src="img/logo2.png" alt="Logo ABCdoABC" title="Logo ABCdoABC" width=""/> </a>
+                    </div><!--/.logo-->
+                    <div class="ad-topo text col-lg-9 col-md-9 hidden-sm hidden-xs">
+                        <a href="#"> <img src="img/ad-topo.jpg" alt="Logo ABCdoABC" title="Logo ABCdoABC" /> </a>
+                    </div><!--/.ad-topo-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+            
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle noticia" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notícias <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle evento" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Eventos <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle guia" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guia Comercial <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle inst" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Institucional <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle caderno" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadernos <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-right hidden-sm" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">Buscar</button>
+                            </form>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </div><!--/.container-->
+            </nav>         
+        </header>
+
+
+
+        <div class="container padding">
+            <div class="container">
+                <div class="row">
+                    <div class="visible-xs">
+                        <figure class="ad-mobile">
+                            <a href="#" title="Publicidade Mobile" alt="Publicidade Mobile"><img class="img-responsive center-block" src="img/ad-mobile.jpg" alt="Publicidade"></a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="visible-sm">
+                        <figure class="ad-sm">
+                            <a href="#" title="Publicidade"><img class="img-responsive center-block" src="img/ad-topo.jpg" alt="Publicidade"></a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h1>Faça do <b>ABC</b>do<b>ABC</b> sua página inicial</h1>
+                </div>
+            </div>
+
+            <div class="row center-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="ie padding2">
+                    <a class="" role="button" data-toggle="collapse" href="#ie" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="titulo model1">
+                            <img src="img/ie.png" />
+                            <h2>Explorer</h2>
+                            <!--<img class="seta" src="img/seta-aparecer.png" />-->
+                        </div>
+                    </a>
+                    <div class="collapse conteudo model1-1" id="ie">
+                        <span>1</span><p>Clique no menu Ferramentas, que fica ao lado direito da barra de endereços e está sinalizado com uma imagem de engrenagem. Escolha "Opções da Internet".</p>
+                        <img class="img-responsive" src="img/ie-img-1.png" />
+                        <span>2</span><p>No item Home page, escreva http://www.abcdoabc.com.br e, por fim, clique em "Ok".</p>
+                        <img class="img-responsive" src="img/ie-img-2.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row center-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="safari padding">
+                    <a class="" role="button" data-toggle="collapse" href="#safari" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="titulo model2">
+                            <img src="img/safari.png" />
+                            <h2>Safari</h2>
+                            <!--<img class="seta1" src="img/seta-aparecer.png" />-->
+                        </div>
+                    </a>
+                    <div class="collapse conteudo model1-2" id="safari">
+                        <span>1</span><p>No navegador da Apple precisa primeiro ir à página principal do ABCdoABC. Depois, basta entrar, pelo menu, na caixa "Preferências" e clicar sobre o botão "Usar a Página Atual</p>
+                        <img class="img-responsive" src="img/safari-img-1.png" />
+                        <img class="img-responsive" src="img/safari-img-2.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row center-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="google padding">
+                    <a class="" role="button" data-toggle="collapse" href="#google" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="titulo model3">
+                            <img src="img/chrome.png" />
+                            <h2>Chrome</h2>
+                            <!--<img class="seta2" src="img/seta-aparecer.png" />-->
+                        </div>
+                    </a>
+                    <div class="collapse conteudo model1-3" id="google">
+                        <span>1</span><p>Vá ao menu Ferramentas (lado direito de endereço) e escolha a opção "Configurações"</p>
+                        <img class="img-responsive" src="img/chrome-img-1.png" />
+                        <span>2</span><p>Em Inicialização, selecione a opção "abre uma página especíica ou um conjunto de páginas". Em seguida, clique em  "Configurar Páginas".</p>
+                        <img class="img-responsive" src="img/chrome-img-2.png" />
+                        <span>3</span><p>Em adicionar uma nova página, digite: "http://www.abcdoabc.com.br". Por fim, clique em "Ok".</p>
+                        <img class="img-responsive" src="img/chrome-img-3.png" />
+                        <span>4</span><p>Caso, por padrão, o Chrome não mostre o ícone de casa (Home page), que leva diretamente à página inicial, volte ao menu Ferramentas e clique na opção "configurações". Em Aparência, escolha a opção "Mostrar botão Página Inicial".</p>
+                        <img class="img-responsive" src="img/chrome-img-4.png" />
+                        <span>5</span><p>Clique em "Alterar" e selecione "Abrir esta página". Na caixa que abrir, digite: "http://www.abcdoabc.com.br". Por fim, clique em "Ok".</p>
+                        <img class="img-responsive" src="img/chrome-img-5.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row center-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               
+                <div class="firefox padding">
+                    <a class="" role="button" data-toggle="collapse" href="#firefox" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="titulo model4">
+                            <img src="img/firefox.png" />
+                            <h2>Firefox</h2>
+                            <!--<img class="seta3" src="img/seta-aparecer.png" />-->
+                        </div>
+                    </a>
+                    <div class="collapse conteudo model1-4" id="firefox">
+                        <span>1</span><p>Para quem usa o Firefox, o meio mais fácil é clicar sobre o símbolo da "Terra" na caixa de endereço e arrastá-lo até o ícone da casa. Depois, basta dar "Ok".</p>
+                        <img class="img-responsive" src="img/firefox-img-1.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="sitemap visible-lg">
+                <nav class="container">
+                    <div class="row center-block">
+                        <div class="lista">
+                            <ul>
+                                <li><a href="#" alt="" title="" class="noticias">Notícias</a></li>
+                                <li><a href="#" alt="" title="">Brasil - Mundo</a></li>
+                                <li><a href="#" alt="" title="">Santo André</a></li>
+                                <li><a href="#" alt="" title="">São Bernardo</a></li>
+                                <li><a href="#" alt="" title="">São Caetano</a></li>
+                                <li><a href="#" alt="" title="">Mauá</a></li>
+                                <li><a href="#" alt="" title="">Diadema</a></li>
+                                <li><a href="#" alt="" title="">Ribeirão Pires</a></li>
+                                <li><a href="#" alt="" title="">Cidade</a></li>
+                                <li><a href="#" alt="" title="">Cultura</a></li>
+                                <li><a href="#" alt="" title="">Economia</a></li>
+                                <li><a href="#" alt="" title="">Educação</a></li>
+                                <li><a href="#" alt="" title="">Esporte</a></li>
+                                <li><a href="#" alt="" title="">Meio Ambiente</a></li>
+                                <li><a href="#" alt="" title="">Política</a></li>
+                                <li><a href="#" alt="" title="">Recursos Humanos</a></li>
+                                <li><a href="#" alt="" title="">Saúde</a></li>
+                                <li><a href="#" alt="" title="">Tecnologia</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#" alt="" title="" class="eventos">Eventos</a></li>
+                                <li><a href="#" alt="" title="">Santo André</a></li>
+                                <li><a href="#" alt="" title="">São Bernardo</a></li>
+                                <li><a href="#" alt="" title="">São Caetano</a></li>
+                                <li><a href="#" alt="" title="">Mauá</a></li>
+                                <li><a href="#" alt="" title="">Diadema</a></li>
+                                <li><a href="#" alt="" title="">Ribeirão Pires</a></li>
+                                <li><a href="#" alt="" title="">Especiais</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#" alt="" title="" class="guia">Guia Comercial</a></li>
+                                <li><a href="#" alt="" title="">Santo André</a></li>
+                                <li><a href="#" alt="" title="">São Bernardo</a></li>
+                                <li><a href="#" alt="" title="">São Caetano</a></li>
+                                <li><a href="#" alt="" title="">Mauá</a></li>
+                                <li><a href="#" alt="" title="">Diadema</a></li>
+                                <li><a href="#" alt="" title="">Ribeirão Pires</a></li>
+                                <li><a href="#" alt="" title="">Artes e Cultura</a></li>
+                                <li><a href="#" alt="" title="">Compras e Serviços</a></li>
+                                <li><a href="#" alt="" title="">Educação</a></li>
+                                <li><a href="#" alt="" title="">Empresas B2B</a></li>
+                                <li><a href="#" alt="" title="">Esportes</a></li>
+                                <li><a href="#" alt="" title="">Lazer</a></li>
+                                <li><a href="#" alt="" title="">Saúde e Beleza</a></li>
+                                <li><a href="#" alt="" title="">Sociedade</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#" alt="" title="" class="institucional">Institucional</a></li>
+                                <li><a href="#" alt="" title="">Santo André</a></li>
+                                <li><a href="#" alt="" title="">São Bernardo</a></li>
+                                <li><a href="#" alt="" title="">São Caetano</a></li>
+                                <li><a href="#" alt="" title="">Mauá</a></li>
+                                <li><a href="#" alt="" title="">Diadema</a></li>
+                                <li><a href="#" alt="" title="">Ribeirão Pires</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#" alt="" title="" class="cadernos">Cadernos</a></li>
+                                <li><a href="#" alt="" title="">Jogos Cariocas - Olímpiada - Rio 2016</a></li>
+                                <li><a href="#" alt="" title="">Tecnologia</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#" alt="" title="" class="usuarios">Usuários</a></li>
+                                <li><a href="#" alt="" title="">Central de Atendimento</a></li>
+                                <li><a href="#" alt="" title="">Política de Privacidade</a></li>
+                                <li><a href="#" alt="" title="">Cadastre-se</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#" alt="" title="" class="social">Redes Sociais</a></li>
+                                <li><a href="#" alt="" title="">Facebook</a></li>
+                                <li><a href="#" alt="" title="">Twitter</a></li>
+                                <li><a href="#" alt="" title="">Google +</a></li>
+                                <li><a href="#" alt="" title="">RSS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="bar-azul col-lg-12">
+                <div class="container">
+                    <div class="row center-block">
+                        <img class="logo-rodape" src="img/logo.png"/><span class="texto-bar-azul">©2016 Todos os direitos reservados a Laboredomus.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                    
+	</body>
+</html>

@@ -1,0 +1,313 @@
+@charset "utf-8"
+@import configuracao
+
+body
+    h1
+        color: $corprincipal
+        text-align: center
+        font-size: 25px
+        font-family: 'Arial', sans-serif
+        margin: 30px 30px
+.btpopup
+    display: croll_top
+    position: fixed
+    bottom: 30px
+    right: 30px
+    opacity: 0.9
+    z-index: 9999
+    &:hover
+        opacity: 1
+        transition: opacity .5s
+
+.ad-mobile
+    margin-top: 20px
+.ad-sm
+    margin-top: 20px
+
+/* header*/
+header
+    width: 100%
+    background-color: $corprincipal
+
+    .text
+        text-align: center
+
+    .logo
+        margin: 20px 0
+
+    .ad-topo
+        margin: 25px 0
+
+        .ad-topo a > img
+        +border-radius(2px)
+
+    .navbar
+        width: 100%
+        +border-radius(0)
+        background-color: $white
+        margin-bottom: 0
+        font-size: 14px
+        box-shadow: 0px 0px 14px rgba(0,0,0,0.1)
+
+    .navbar-default .navbar-nav > li > a.noticia
+        color: $noticias
+        &:hover, &:focus
+            background-color: $noticias
+            color: $white
+
+    .navbar-default .navbar-nav > li > a.evento
+        color: $eventos
+        &:hover, &:focus
+            background-color: $eventos
+            color: $white
+
+    .navbar-default .navbar-nav > li > a.guia
+        color: $guia
+        &:hover, &:focus
+            background-color: $guia
+            color: $white
+
+    .navbar-default .navbar-nav > li > a.inst
+        color: $institucional
+        &:hover, &:focus
+            background-color: $institucional
+            color: $white
+
+    .navbar-default .navbar-nav > li > a.caderno
+        color: $cadernos
+        &:hover, &:focus
+            background-color: $cadernos
+            color: $white
+
+/*Conteúdo*/
+
+.padding
+    padding: 0
+
+.ie
+    border: 1px solid $border
+    border-radius: 0
+    color: #ccc
+    width: 100%
+    margin-top: 10px
+    .titulo
+        overflow: hidden
+        padding: 0 20px
+        border-bottom: 1px solid $border
+        cursor: pointer
+        img
+            float: left
+        h2
+            margin: 0
+            padding: 20px 15px
+            font-size: 18px
+            font-weight: bold
+            color: $ie
+            float: left
+        .seta
+            float: right
+            width: 32px
+            margin: 21px 0
+    .conteudo
+        padding: 25px
+        span
+            float: left
+            font-size: 30px
+            font-weight: bold
+            margin-right: 10px
+            color: $ie
+        p
+            color: $cortextopadrao
+            margin-left: 27px
+        img
+            margin-bottom: 20px
+
+.safari
+    border: 1px solid $border
+    border-radius: 0
+    color: #ccc
+    width: 100%
+    margin-top: 10px
+    .titulo
+        overflow: hidden
+        padding: 0 20px
+        border-bottom: 1px solid #dedede
+        cursor: pointer
+        img
+            float: left
+        h2
+            margin: 0
+            padding: 20px 15px
+            font-size: 18px
+            font-weight: bold
+            color: $safari
+            float: left
+        .seta1
+            float: right
+            width: 32px
+            margin: 21px 0
+    .conteudo
+        padding: 25px
+        span
+            float: left
+            font-size: 30px
+            font-weight: bold
+            margin-right: 10px
+            color: $safari
+        p
+            color: $cortextopadrao
+            margin-left: 27px
+        img
+            margin-bottom: 20px
+
+.google
+    border: 1px solid $border
+    border-radius: 0
+    color: #ccc
+    width: 100%
+    margin-top: 10px
+    .titulo
+        overflow: hidden
+        padding: 0 20px
+        border-bottom: 1px solid #dedede
+        cursor: pointer
+        img
+            float: left
+        h2
+            margin: 0
+            padding: 20px 15px
+            font-size: 18px
+            font-weight: bold
+            color: $chrome
+            float: left
+        .seta2
+            float: right
+            width: 32px
+            margin: 21px 0
+    .conteudo
+        padding: 25px
+        span
+            float: left
+            font-size: 30px
+            font-weight: bold
+            margin-right: 10px
+            color: $chrome
+        p
+            color: $cortextopadrao
+            margin-left: 27px
+        img
+            margin-bottom: 20px
+
+.firefox
+    border: 1px solid $border
+    border-radius: 0
+    color: #ccc
+    width: 100%
+    margin-top: 10px
+    .titulo
+        overflow: hidden
+        padding: 0 20px
+        border-bottom: 1px solid #dedede
+        cursor: pointer
+        img
+            float: left
+        h2
+            margin: 0
+            padding: 20px 15px
+            font-size: 18px
+            font-weight: bold
+            color: $firefox
+            float: left
+        .seta3
+            float: right
+            width: 32px
+            margin: 21px 0
+    .conteudo
+        padding: 25px
+        span
+            float: left
+            font-size: 30px
+            font-weight: bold
+            margin-right: 10px
+            color: $safari
+        p
+            color: $cortextopadrao
+            margin-left: 27px
+        img
+            margin-bottom: 20px
+
+
+/*Footer*/
+footer
+    background: #f5f5f5
+    width: 100%
+    margin-top: 25px
+
+    a
+        color: #626262
+        text-decoration: none
+
+    a:hover
+        color: $black
+        text-decoration: underline
+
+    img
+        vertical-align: middle
+        width: 50px
+        margin-right: 20px
+
+    .sitemap
+        background-color: #f5f5f5
+        color: #626262
+        margin: 0 auto
+        padding: 20px
+        overflow: hidden
+        font-size: 13px
+        width: 1170px
+
+        ul
+            float: left
+            padding: 0 20px 0 0
+            list-style: none
+
+        .container ul li:first-child
+            padding: 0 0 20px 0
+
+    .bar-azul
+        color: $white
+        background-color: $corprincipal
+        padding: 10px
+        font-size: 13px
+        text-align: center
+        vertical-align: middle
+        clear: both
+
+.noticias, .noticias:hover
+    color: $noticias
+.eventos, .eventos:hover
+    color: $eventos
+.guia, .guia:hover
+    color: $guia
+.institucional, .institucional:hover
+    color: $institucional
+.cadernos, .cadernos:hover
+    color: $cadernos
+.usuarios, .usuarios:hover
+    color: $usuarios
+.social, .social:hover
+    color: $social
+
+.mostrar-mais
+    text-align: center
+    margin: 20px 0
+
+    .btn-primary2
+        font-size: 15px
+        color: $white
+        background-color: #4BB047
+        border-color: #379033
+        padding: 8px 18px
+        border-radius: 1px
+        &:hover
+            background: #379033
+            transition: background .5s

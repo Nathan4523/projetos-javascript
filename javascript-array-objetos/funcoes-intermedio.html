@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Função intermediário</title>
+</head>
+<body>
+
+    <h1>Função intermediário</h1>
+
+    <script>
+        //todo parametro ele reconhece o tipo dele (JS NÃO É TIPADA)
+        
+        //no ES6 o parametro pode ter um valor default
+        let fucNameDefault = function fucNameDefault(name = 'Nicolas'){
+            console.log(`Seja bem vindo ${name}`)
+        }
+
+        let fucName = function fucName(name){
+            console.log(`Seja bem vindo ${name}`)
+        }
+
+        fucNameDefault()
+        fucName('Nathan')
+
+        //recursao é o ato de executar uma chamada de um método dentro do mesmo
+
+        function fatorial(num){
+            if(num == 1){
+                return 1
+            }else{
+                return num * fatorial(num - 1)
+            }
+        }
+
+        let result = fatorial(5)
+        console.log('Resulta-> ', result)
+    </script>
+</body>
+</html>

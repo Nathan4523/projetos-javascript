@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+
+<body>
+    <center>
+        <h1>Array</h1>
+    </center>
+
+    <script>
+        /*
+         * array é estrutura de dados que armazena uma lista (coleção) de elementos de tal forma que cada um é 
+         * identificado por meio de um índice 
+         */
+
+        //iniciando vazio
+        let arr = []
+
+        // iniciando com array 
+        let array = ['Nathan', 'Campos', 'Json', 'Jimmy']
+
+        arr[0] = 'Nathan'
+        arr[1] = 'Campos'
+        arr[2] = 'Json'
+        arr[3] = 'Jimmy'
+
+        for (x = 0; x < 4; x++) {
+            console.log(array[x])
+        }
+
+        console.log(arr[0])
+
+
+        //inserindo valores dentro do array
+        //ele sempre insere no final do array
+        let c = []
+        c.push('Insert1') //insere
+        c.push('Insert3') //insere
+        c.push('Insert4') //insere
+        c.push('Insert5') //insere
+        c.unshift('Insert2') //ele insere para o comeco
+        //c.pop() // ele exclui o primeiro e retorna o primeiro
+        //c.shift() // ele exclui o ultimo e retorna o ultimo
+        c.reverse() //ele inverte
+        let result = c.slice(1) //ele faz uma copia
+        console.log(result)
+        c.forEach((val, index) => {
+            console.log(c[index])
+        });
+
+
+        let d = ['PHP', 'JS', 'C#', 'Angular']
+        let unindo =  arr.concat(d) //contact ele junta dois array distintos
+        console.log(unindo)
+    </script>
+</body>
+
+</html>

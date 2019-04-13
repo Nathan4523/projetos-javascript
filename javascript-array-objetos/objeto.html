@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objeto</title>
+</head>
+
+<body>
+    <center>
+        <h1>
+            Objeto
+        </h1>
+    </center>
+
+    <script>
+        /*
+         * Objeto pode ser comparado como um objeto na vida real, possui propriedades e tipos. Muito utilizados em todo 
+         * JavaScript, capaz de formar estruturas complexas. 
+         */
+
+        //  let obj = {} ou let obj = new Objeto
+        //mais usada
+        let pessoa = {
+            name: 'Nicolas',
+            idade: 20,
+            altura: 1.82,
+            peso: 79.0
+        }
+
+        //outra forma de fazer
+        let pessoaNova = {}
+
+        // add 1
+        pessoaNova.name = 'Nathan'
+
+        // add 2
+        pessoaNova['idade'] = 20
+        pessoaNova.peso = 83
+        pessoaNova.altura = 1.80
+
+        let calcularIMC = () => {
+            let result = pessoaNova.peso / (pessoaNova.altura * pessoaNova.altura)
+            console.log(result)
+        }
+
+        calcularIMC()
+
+        console.log(pessoa.name)
+        console.log(pessoaNova)
+
+        console.log('==============')
+
+        let listaObjetos = () => {
+            // array de objetos
+            let ar = [{
+                name: 'Billy',
+                idade: 30,
+                peso: 90
+            }]
+
+            // dando um inset de array no objeto
+            ar.push({
+                name: 'Jimmy',
+                idade: 12,
+                peso: 50
+            })
+
+            ar.forEach((val, index) => {
+                console.log(ar[index])
+            });
+        }
+
+        listaObjetos()
+    </script>
+
+</body>
+
+</html>

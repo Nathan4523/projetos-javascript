@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Banner Popup</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta charset="utf-8" />
+		<meta name="author" content="Gustavo Caspirro - 2016" />
+		<link rel="stylesheet" type="text/css" href="css/stylepopup.css" />
+		<script type="text/javascript" src="js/jspopup.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.1.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="banner_popup"  style="display:none">
+			<a href="javascript: void(0);" onclick="fecha_banner();" class="linksFechar">
+				<img class="imgfechar" src="img/fechar.png" border="0">
+			</a>
+			<a href="tornar-pagina-principal.html" target="_self">
+				<div class="info">
+					<h1><span class="linha1">Faça o </span></br><span class="linha2a"> ABC </span><span class="linha2b">do</span><span class="linha2c"> ABC </span></br><span class="linha3">sua página Inicial!</span></h1>
+					<div class="button">
+						Clique Aqui!
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<script language="JavaScript">
+		if(document.getElementById('banner_popup'))
+			abre_banner();
+		</script>
+		<a href="tornar-pagina-principal.html" target="_Self">ola</a>
+	</body>
+</html>

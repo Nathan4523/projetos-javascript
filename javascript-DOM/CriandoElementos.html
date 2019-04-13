@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Criando elementos</title>
+</head>
+
+<body>
+        <p id="removeId">Estou sendo excluido com removeChild</p>
+    <script>
+        //No js da para criar elementos no html como button, p, div
+        let button = document.createElement('button')
+        document.body.removeChild(document.getElementById('removeId'))
+
+        //criando um elemento completo
+        let attr = document.createAttribute('class')
+        let text = document.createTextNode("Button em js")
+        attr.value = 'costumizado'
+        button.setAttributeNode(attr)
+        button.appendChild(text)
+        document.body.appendChild(button)
+
+        // append ele acrescenta
+        //removeChild ele remove o elemento
+    </script>
+</body>
+
+</html>
